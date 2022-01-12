@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/store-audio-file-app/static/css/main.31d6cfe0.css",
+    "main.js": "/store-audio-file-app/static/js/main.c29051d0.js",
+    "index.html": "/store-audio-file-app/index.html",
+    "main.c29051d0.js.map": "/store-audio-file-app/static/js/main.c29051d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.c29051d0.js"
+  ]
+}
