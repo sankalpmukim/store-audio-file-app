@@ -1,25 +1,28 @@
 import { Typography } from "@mui/material";
 import { useLiveQuery } from "dexie-react-hooks";
 import { db } from "../db";
+import SongListItem from "./SongListItem";
 
 const SongList = () => {
   const songs = useLiveQuery(() => db.songs.toArray());
 
   return (
     <>
-      <ul>
-        {songs?.map((song) => {
+      <div>
+        {songs?.map((song, idx) => {
           return (
-            <li key={song.id}>
-              {song.name}, {song.data.substring(0, 10)}
-            </li>
+            <SongListItem
+              key={song.id}
+              idx={idx + 1}
+              id={song.id}
+              name={song.name}
+              data={song.data}
+            />
           );
         })}
-      </ul>
+      </div>
       {songs ? (
-        songs.length !== 0 ? (
-          <pre>{JSON.stringify(songs.length, null, 4)}</pre>
-        ) : (
+        songs.length !== 0 ? null : (
           <Typography variant="h6"> Click on + to add songs</Typography>
         )
       ) : null}

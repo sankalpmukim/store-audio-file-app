@@ -26,14 +26,6 @@ function AddSongDialog(props) {
   const fileByteArray = [];
   const addSong = async () => {
     try {
-      const fileEle = document.getElementById("audio-file");
-
-      const files = fileEle.files;
-      if (files.length === 1) {
-        console.log("progress");
-      } else {
-        console.error("Wrong number of files selected");
-      }
       await db.songs.add({
         ...formData,
       });
@@ -83,7 +75,6 @@ function AddSongDialog(props) {
                   for (const a of array) {
                     fileByteArray.push(a);
                   }
-                  console.log(fileByteArray);
                   setFormData({ ...formData, data: encode(fileByteArray) });
                 }
               };
