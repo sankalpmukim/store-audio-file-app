@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import CssBaseline from "@mui/material/CssBaseline";
 import Toolbar from "@mui/material/Toolbar";
-import { AppBar, Container, Fab, Typography } from "@mui/material";
+import { AppBar, Avatar, Container, Fab, Typography } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import Content from "./components/Content";
 import AddSongDialog from "./components/AddSongDialog";
@@ -26,6 +26,7 @@ function App() {
             margin: "1rem",
           }}
         >
+          <Avatar alt="logo" src="/store-audio-file-app/logo.png" />
           <Typography variant="h3">Your browser playlist</Typography>
           <Fab color="default" aria-label="add" onClick={handleClickOpen}>
             <AddIcon />
