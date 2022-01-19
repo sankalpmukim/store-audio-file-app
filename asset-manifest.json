@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/store-audio-file-app/static/css/main.31d6cfe0.css",
-    "main.js": "/store-audio-file-app/static/js/main.6c1c3b68.js",
+    "main.js": "/store-audio-file-app/static/js/main.b95abb0a.js",
     "index.html": "/store-audio-file-app/index.html",
-    "main.6c1c3b68.js.map": "/store-audio-file-app/static/js/main.6c1c3b68.js.map"
+    "main.b95abb0a.js.map": "/store-audio-file-app/static/js/main.b95abb0a.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.6c1c3b68.js"
+    "static/js/main.b95abb0a.js"
   ]
 }
